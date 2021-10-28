@@ -1,0 +1,28 @@
+<!doctype html>
+<head>
+  <meta name="author" content="puravidaapps.com">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="jquery-ui.min.css">
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="jquery-ui.min.js"></script>
+
+  <title>Date</title>
+</head>
+
+<body>
+  <div id="datepicker"></div>
+
+  <script>
+    $(document).ready(function(){
+      $("#datepicker").datepicker({
+        // print the selected date to the page title
+        onSelect: function(dateText, inst) { window.document.title = dateText }
+      });
+    });
+  </script>
+
+</body>
+</html>
+
